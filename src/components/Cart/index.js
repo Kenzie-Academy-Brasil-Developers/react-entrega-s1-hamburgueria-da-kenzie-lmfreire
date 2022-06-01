@@ -24,7 +24,7 @@ function Cart({ currentSale, removeHandleClick, setCurrentSale }) {
           </div>
         )}
       </div>
-      <div>
+      <div className="CardTotal">
         {currentSaleExist() && (
           <CartTotal
             currentSale={currentSale}
