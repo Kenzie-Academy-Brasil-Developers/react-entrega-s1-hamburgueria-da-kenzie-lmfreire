@@ -1,0 +1,51 @@
+.CardPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardPrice > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.CardPrice > div > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 24px;
+
+  color: #333333;
+}
+
+.CardPrice > div > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 24px;
+
+  color: #828282;
+}
+
+.CardPrice > button {
+  width: 90%;
+  height: 60px;
+  margin-left: 5%;
+
+  background: #e0e0e0;
+
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #828282;
+}

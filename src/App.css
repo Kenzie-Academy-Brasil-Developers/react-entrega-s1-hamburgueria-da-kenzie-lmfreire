@@ -1,0 +1,73 @@
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem;
+  flex-wrap: wrap;
+}
+
+.App-header > h1 {
+  color: #333333;
+}
+
+.App-header > h1 > span {
+  color: #eb5757;
+  font-size: 1.3rem;
+}
+
+.InputSearch {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid rgb(186, 185, 185);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.InputSearch > form > input {
+  border: none;
+}
+
+.InputSearch > form > input:focus {
+  outline: none;
+}
+
+.InputSearch > form > button {
+  border: none;
+  background-color: #27ae60;
+  border-radius: 4px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.MainCards {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+
+  .MainCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .App-header > h1 {
+    color: #333333;
+  }
+}

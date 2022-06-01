@@ -1,0 +1,63 @@
+.Cart {
+  display: flex;
+  margin: 5px;
+}
+
+.ImgCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e0e0e0;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.ImgCart > img {
+  width: 80%;
+  height: 80%;
+}
+
+.Components {
+  width: 83%;
+  display: flex;
+  margin-left: 8px;
+  justify-content: space-between;
+}
+
+.ComponentsCart > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 24px;
+
+  color: #333333;
+}
+
+.Components > button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 15px;
+
+  border: none;
+  background-color: #f5f5f5;
+  color: #bdbdbd;
+
+  height: 35px;
+
+  cursor: pointer;
+}
+
+.ComponentsCart > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 16px;
+
+  color: #828282;
+}
