@@ -9,7 +9,6 @@ function App() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentSale, setCurrentSale] = useState([]);
-  const [cartTotal, setCartTotal] = useState(0);
   const [userInput, setUserInput] = useState("");
 
   useEffect(() => {
@@ -49,6 +48,10 @@ function App() {
     return filteredProducts.length > 0;
   }
 
+  function findInput() {
+    return userInput.length > 0;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -68,6 +71,12 @@ function App() {
           </form>
         </div>
       </header>
+
+      {findInput() && (
+        <h1 className="ResultFind">
+          Resultado para Busca: <span>{userInput}</span>
+        </h1>
+      )}
 
       <main className="MainCards">
         {filterProducs() ? (

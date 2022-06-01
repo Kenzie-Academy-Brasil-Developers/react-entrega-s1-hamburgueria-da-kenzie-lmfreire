@@ -52,6 +52,28 @@
   width: 100%;
 }
 
+.ResultFind {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+
+  color: #333333;
+
+  margin-left: 3.4%;
+}
+
+.ResultFind > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+
+  color: #828282;
+}
+
 @media only screen and (max-width: 768px) {
   .App-header {
     display: flex;
@@ -69,5 +91,31 @@
   }
   .App-header > h1 {
     color: #333333;
+  }
+
+  .InputSearch > form {
+    display: flex;
+  }
+
+  .ResultFind {    
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+  
+    color: #333333;
+  
+    margin-left: 3.4%;
+  }
+  
+  .ResultFind > span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+  
+    color: #828282;
   }
 }
