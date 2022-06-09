@@ -4,6 +4,7 @@ import "./App.css";
 import Cart from "./components/Cart";
 
 import ProductsList from "./components/ProductsList";
+import toast, { Toaster } from "react-hot-toast";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,6 +34,11 @@ function App() {
         return elem.id === id;
       });
       setCurrentSale([...currentSale, found]);
+      toast.success("Item adicionado com sucesso", {
+        duration: 1000,
+      });
+    } else {
+      toast.error("Não pode adicionar o mesmo item");
     }
   }
 
@@ -40,7 +46,9 @@ function App() {
     const found = currentSale.filter((elem) => {
       return elem.id !== id;
     });
-
+    toast.success("Removido", {
+      duration: 800,
+    });
     setCurrentSale(found);
   }
 
@@ -51,7 +59,6 @@ function App() {
   function findInput() {
     return userInput.length > 0;
   }
-
   return (
     <div className="App">
       <header className="App-header">
@@ -89,6 +96,7 @@ function App() {
           removeHandleClick={removeHandleClick}
           setCurrentSale={setCurrentSale}
         />
+        <Toaster />
       </main>
     </div>
   );
